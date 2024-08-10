@@ -1,0 +1,169 @@
+.third{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    color: white;
+    flex-wrap: wrap;
+    
+}
+.third>.search{
+    background: rgb(88, 87, 87);
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 5px 10px;
+}
+.search-p{
+    display: flex;
+    gap: 0.8rem;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border: 1px solid lightgrey;
+    min-width: 40rem;
+    border-radius: 5px;
+    max-width: 40rem;
+    margin: 0;
+    font-size: 14px;
+    flex-wrap: wrap;
+
+}
+.main{
+    background: #2c2f48;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 25px;
+    
+}
+.main-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;position: relative;
+}
+.main-img{
+    width: 100%;
+   
+}
+.main-one>p{
+    position: absolute;
+    
+}
+.feature{
+    display: flex;
+    align-items: center;justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.feature>.see{
+    color: grey;
+    font-size: 12px;
+}
+.VR{
+    display: flex;
+    justify-content: space-between;
+}
+.virtualo{
+    background: url('Group Img.png'); 
+    
+     background-repeat: no-repeat;
+     max-width: 24rem;
+     overflow: hidden;
+     border-radius: 10px;
+     background-size: 100%;
+     background-position:center;
+    
+ }
+.virtual{
+    background: url('Keypad (1).png'); 
+     
+     background-repeat: no-repeat;
+     max-width: 24rem;
+     overflow: hidden;
+     border-radius: 10px;
+     background-size: 100%;
+     background-position:center;
+    
+ }
+
+ 
+.reality{
+    margin-top: 5rem;
+   
+    flex-wrap: wrap;
+    color: white;
+    width: fit-content;
+    backdrop-filter: blur(16px) ;
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    
+    bottom: 0;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+.popular{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+
+}
+.card{
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+    width: cover;
+}
+.card>div{
+    display: flex;
+    
+   
+}
+
+.details{
+    background: rgb(88, 87, 87);
+    padding: 5px;
+    width: 100%;
+}
+.absolute{
+    position: absolute;
+    top: 49px;
+    left: 89px;
+    width: 4rem;
+}
+.menu{
+    display: none;
+}
+
+
+@media(max-width:800px){
+    .VR{
+        flex-direction: column;
+        gap: 2rem;
+    }
+   
+    .popular{
+        flex-direction: column;
+        align-items: flex-start;
+       
+    }
+    .card{
+        width: 100%;
+    }
+    .virtual, .virtualo{
+        width: 100%;
+        background-size: 100%;
+        margin: 0 auto;
+        
+    }
+    .search-p{
+        min-width:60%;
+    }
+    .menu{
+        display: block;
+    }
+}
